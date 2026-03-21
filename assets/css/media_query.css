@@ -1,0 +1,594 @@
+@media screen and (max-width: 1300px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .container {
+    width: 1100px;
+  }
+
+  header {
+    width: 1100px;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 50;
+    margin: 0 auto;
+  }
+
+  header.active {
+    top: 250px;
+  }
+
+  .navbar-menu-btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navbar-brand {
+    margin-left: 50px;
+  }
+
+  .navbar-menu-btn span {
+    display: block;
+    background: #fff;
+    width: 25px;
+    height: 2px;
+    margin: 8px;
+  }
+
+  .navbar-menu-btn .two {
+    width: 20px;
+  }
+
+  .navbar-menu-btn .three {
+    width: 15px;
+  }
+
+  .navbar-menu-btn.active span {
+    background: hsl(214, 84%, 56%);
+  }
+
+  .navbar-menu-btn.active .one {
+    transform: rotate(45deg) translateY(14px);
+  }
+
+  .navbar-menu-btn.active .two {
+    width: 0;
+  }
+
+  .navbar-menu-btn.active .three {
+    width: 25px;
+    transform: rotate(-45deg) translateY(-14px);
+  }
+
+  nav {
+    position: fixed;
+    top: -250px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  nav.active {
+    top: 0;
+  }
+
+  .navbar-nav {
+    height: 250px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid hsl(218, 39%, 14%);
+  }
+
+  .navbar-nav li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+
+  header {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 900px;
+  }
+
+  header {
+    width: 900px;
+  }
+
+  .slider-container {
+    height: 400px;
+  }
+
+  .movie-card .card-head {
+    height: 180px;
+  }
+
+  .account-main {
+    margin-top: -60px;
+  }
+
+  .account-container .account-header {
+    margin-bottom: 100px;
+  }
+
+  .biyografi-durum-text {
+    padding: 0 5px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+
+  header {
+    width: 800px;
+  }
+
+  .movie-card .card-head {
+    height: 170px;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  .account-header-biografi-textbox {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    width: 700px;
+  }
+
+  header {
+    width: 700px;
+  }
+
+  .slider-container {
+    height: 350px;
+  }
+
+  .movie-card .card-head {
+    height: 200px;
+  }
+
+  .hakkimda-image img {
+    height: 300px;
+  }
+
+  .hakkimda-header .hakkimda-text {
+    padding-top: 0;
+  }
+
+  .hakkimda-text .hakkimda-text-title {
+    margin-bottom: 0px;
+  }
+
+  .hakkimda-text .hakkimda-text-write {
+    margin: 0px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .hakkimda-social-icon .hakkimda-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .account-main {
+    margin-top: -120px;
+  }
+
+  .account-container .account-header {
+    margin-bottom: 150px;
+  }
+
+  .acoount-header-biografi-buttons {
+    width: 150px;
+  }
+
+  .acoount-header-biografi-kaydet-button,
+  .acoount-header-biografi-iptal-button {
+    height: 40px;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    width: 600px;
+  }
+
+  header {
+    width: 600px;
+  }
+
+  .slider-container {
+    height: 325px;
+  }
+
+  .movie-card .card-head {
+    height: 180px;
+  }
+
+  .account-main {
+    margin-top: -140px;
+  }
+
+  .film-bilgilendirme-text h1 {
+    margin: 0;
+  }
+
+  .film-bilgilendirme-text p {
+    margin: 5px 0;
+  }
+
+  .film-text-p {
+    flex: 1;
+    overflow-y: auto;
+    height: 162px;
+  }
+
+  .film-bilgilendirme-detay-buttons {
+    display: block;
+  }
+
+  .film-izle-button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .film-bilgilendirme-fav-button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    width: 500px;
+  }
+
+  header {
+    width: 500px;
+  }
+
+  .navbar-brand {
+    width: 150px;
+  }
+
+  .slider-container {
+    height: 300px;
+  }
+
+  .watch-actions > .film-search {
+    width: 170px;
+  }
+
+  .movie-card .card-head {
+    height: 160px;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .footer-main {
+    width: 50%;
+  }
+
+  .footer-links {
+    padding-top: 20px;
+  }
+
+  .hakkimda-header {
+    display: block;
+  }
+
+  .hakkimda-header .hakkimda-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hakkimda-header .hakkimda-text {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .account-main {
+    margin-top: -160px;
+  }
+
+  .film-bilgilendirne-main {
+    display: block;
+  }
+
+  .film-bilgilendirme-image {
+    display: none;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .film-bilgilendirme-detay {
+    padding: 0;
+  }
+
+  .account-container .account-header {
+    display: block;
+    margin-bottom: 170px;
+    height: 320px;
+  }
+
+  .account-header-logo {
+    margin-bottom: 5px;
+  }
+
+  .account-header-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .account-header-text-logo {
+    display: none;
+  }
+
+  .account-header-text-logo-mobile {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .acoount-title-title-mobile {
+    font-size: 28px;
+  }
+
+  .account-header-biografi-textbox {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 400px;
+  }
+
+  header {
+    width: 400px;
+  }
+
+  .slider-container {
+    height: 250px;
+  }
+
+  .prev-button,
+  .next-button {
+    padding: 5px 15px;
+  }
+
+  .film-btn,
+  .dizi-btn,
+  .anime-btn {
+    width: 33%;
+    padding: 30px 0;
+    font-size: 16px;
+  }
+
+  .watch-actions > .film-search {
+    width: 150px;
+  }
+
+  .movie-card .card-head {
+    height: 130px;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .account-main {
+    margin-top: -220px;
+  }
+
+  .account-header-profile {
+    width: 130px;
+    height: 130px;
+  }
+
+  .account-header-profile-text {
+    font-size: 16px;
+  }
+
+  .accounts-settings-elements {
+    display: block;
+  }
+
+  .accounts-settings-elements > label {
+    width: 0px;
+  }
+
+  .accounts-element-file {
+    margin: 10px 1px;
+  }
+
+  .accounts-element-textbox {
+    margin-top: 5px;
+  }
+
+  input[type="file"]::-webkit-file-upload-button {
+    padding: 34px 25px;
+  }
+
+  .account-container .account-header {
+    display: block;
+    margin-bottom: 250px;
+    height: 400px;
+  }
+
+  .acoount-title-title-mobile {
+    font-size: 20px;
+  }
+
+  .acoount-header-biografi {
+    display: block;
+    gap: 10px;
+  }
+
+  .acoount-header-biografi-buttons {
+    display: flex;
+    width: 100%;
+  }
+
+  .acoount-header-biografi-kaydet-button,
+  .acoount-header-biografi-iptal-button {
+    margin-right: 5px;
+  }
+
+  .giris-form {
+    width: 100%;
+  }
+
+  .btnn {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 350px;
+  }
+
+  header {
+    width: 350px;
+  }
+
+  .navbar-brand {
+    width: 125px;
+  }
+
+  .slider-container {
+    display: none;
+  }
+
+  .banner-line {
+    display: none;
+  }
+
+  .watch-text > img {
+    width: 25px;
+  }
+
+  .watch-text > h1 {
+    font-size: 24px;
+  }
+
+  .movie-card .card-head {
+    height: 220px;
+  }
+
+  .watch-nav-buttons {
+    gap: 5px;
+  }
+
+  .watch-nav-buttons .last {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .watch-nav-buttons .watch-nav-button {
+    font-size: 12px;
+  }
+
+  .hakkimda-header .hakkimda-image img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 325px;
+  }
+
+  header {
+    width: 325px;
+  }
+
+  .watch-text > img {
+    width: 20px;
+  }
+
+  .watch-text > h1 {
+    font-size: 20px;
+  }
+
+  .watch-actions > .film-search {
+    width: 130px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .slider-container {
+    border-radius: 0px;
+  }
+
+  .slide {
+    border-radius: 0px;
+  }
+
+  .slide img {
+    border-radius: 0px;
+  }
+
+  main {
+    padding: 0 5px;
+  }
+
+  .movie-card .card-head {
+    height: 200px;
+  }
+
+  .footer {
+    padding: 0 20px;
+  }
+
+  .footer-main {
+    width: 100%;
+  }
+}
